@@ -1,0 +1,36 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: 353535;
+}
+
+.logo_img {
+  width: 80px;
+  margin: 0px 5px;
+}
+
+.menus {
+  font-size: 20px;
+}
+
+.menu {
+  margin-right: 15px;
+  font-weight: 600;
+}
