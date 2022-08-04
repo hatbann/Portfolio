@@ -8,13 +8,7 @@
 
 .img {
   width: 20vw;
-  height: auto;
-  transition: 0.3s;
-}
-
-.img:hover {
-  transform: scale(2);
-  z-index: 1000;
+  cursor: pointer;
 }
 
 .projectName {

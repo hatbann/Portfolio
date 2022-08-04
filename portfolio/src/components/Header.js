@@ -1,6 +1,7 @@
 import styles from './css/Header.module.css';
-
+import { Link } from 'react-scroll';
 import logo from '../images/logo_trans.png';
+import Skills from './Skills';
 
 function Header() {
   return (
@@ -11,9 +12,11 @@ function Header() {
           <div>Hyebin Cho</div>
         </div>
         <div className={styles.menus}>
-          <span className={styles.menu} style={{ color: '#FFA0A0' }}>
-            About
-          </span>
+          <Link>
+            <span className={styles.menu} style={{ color: '#FFA0A0' }}>
+              About
+            </span>
+          </Link>
           <span className={styles.menu} style={{ color: '#C2FFA5' }}>
             Skills
           </span>

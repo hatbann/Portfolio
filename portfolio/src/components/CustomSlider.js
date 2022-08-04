@@ -7,26 +7,34 @@ import styles from './css/CustomSlider.module.css';
 import Project from './Project';
 
 export const StyledSlider = styled(Slider)`
-  height: 90%; //슬라이드 컨테이너 영역
+  height: 280px; //슬라이드 컨테이너 영역
 
   .slick-list {
     //슬라이드 스크린
-    width: 600px;
+    width: 70vw;
     height: 100%;
-    margin: 0 auto;
+    margin: 0;
     overflow-x: hidden;
     margin-top: 30px;
   }
 
+  .slick-slide {
+    width: 100%;
+  }
+
   .slick-dots {
     //슬라이드의 위치
-    bottom: 20px;
-    margin-top: 200px;
+    margin-top: 70px;
   }
 
   .slick-track {
     //이건 잘 모르겠음
     width: 100%;
+    height: 100%;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: #c2e9ff;
   }
 `;
 

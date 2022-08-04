@@ -7,6 +7,7 @@ const webProjects = [
     id: 1,
     projectName: 'Portfolio',
     image: require('../images/portfolio.png'),
+    site: '',
     explain: (
       <>
         <>
@@ -20,6 +21,8 @@ const webProjects = [
   {
     id: 2,
     projectName: 'fishroom',
+    image: require('../images/fishroom.png'),
+    site: 'https://hatbann.github.io/fishroom/#/',
     explain: (
       <>
         <>
@@ -37,6 +40,8 @@ const webProjects = [
   {
     id: 3,
     projectName: 'nwitter',
+    image: require('../images/nwitter.png'),
+    site: 'https://hatbann.github.io/nwitter/#/',
     explain: (
       <>
         <>react와 firebase를 활용한 클론코딩을 진행했습니다.&nbsp;</>
@@ -48,6 +53,32 @@ const webProjects = [
           글쓴이의 경우 삭제 및 수정이 가능하고, 회원은 자신의 닉네임을 변경할
           수 있습니다
         </>
+      </>
+    ),
+  },
+  {
+    id: 4,
+    projectName: '카카오톡 클론코딩',
+    image: require('../images/kokoa_2.png'),
+    site: 'https://hatbann.github.io/kokoa-clone/',
+    explain: (
+      <>
+        HTML, CSS를 이용해서 제작한 카카오톡 클론사이트입니다. 반응형 웹을
+        공부하기 위해 모바일 사이즈에 맞게 제작했으며 다양한 CSS 요소를 이용해
+        재미있고 동적인 애니메이션 효과를 주었습니다
+      </>
+    ),
+  },
+  {
+    id: 5,
+    projectName: '그림판',
+    image: require('../images/paint.png'),
+    site: 'https://hatbann.github.io/paint/',
+    explain: (
+      <>
+        HTML, CSS를 이용해서 제작한 카카오톡 클론사이트입니다. 반응형 웹을
+        공부하기 위해 모바일 사이즈에 맞게 제작했으며 다양한 CSS 요소를 이용해
+        재미있고 동적인 애니메이션 효과를 주었습니다
       </>
     ),
   },

@@ -19,6 +19,7 @@ function Home() {
         <About />
         <Skills />
         <Projects />
+        <Address />
       </div>
     </div>
   );
