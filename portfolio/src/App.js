@@ -9,7 +9,6 @@ import styles from './App.css';
 function App() {
   return (
     <div className={styles.container}>
-      <Header />
       <Router>
         <Switch>
           <Route path={'/'}>

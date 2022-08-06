@@ -7,7 +7,7 @@ const webProjects = [
     id: 1,
     projectName: 'Portfolio',
     image: require('../images/portfolio.png'),
-    site: '',
+    site: '/',
     explain: (
       <>
         <>

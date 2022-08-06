@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './css/Web.module.css';
+import styles from './css/Mobile.module.css';
 import CustomSlider from './CustomSlider';
 
 const mobileProjects = [
@@ -74,7 +74,13 @@ const mobileProjects = [
 ];
 
 function Mobile() {
-  return <div style={{ height: '310px' }}>제작중...</div>;
+  return (
+    <div style={{ height: '310px' }} className={styles.text}>
+      멋진 결과물로 오겠습니다
+      <br />
+      조금만 기다려주세요
+    </div>
+  );
 }
 
 export default Mobile;

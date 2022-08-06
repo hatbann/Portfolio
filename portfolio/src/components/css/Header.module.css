@@ -19,6 +19,7 @@
   font-size: 20px;
   font-weight: 600;
   color: 353535;
+  cursor: pointer;
 }
 
 .logo_img {
@@ -33,4 +34,5 @@
 .menu {
   margin-right: 15px;
   font-weight: 600;
+  cursor: pointer;
 }
