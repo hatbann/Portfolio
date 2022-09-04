@@ -10,13 +10,17 @@ button {
 
 .btns {
   display: flex;
-  width: 25vw;
+  width: 400px;
   justify-content: space-between;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.btn {
+  font-size: 20px;
 }
 
 .active {
   border: 2px solid #c2e9ff;
   border-radius: 50%;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }

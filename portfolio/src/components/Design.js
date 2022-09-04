@@ -7,7 +7,7 @@ const designProjects = [
     id: 1,
     projectName: '나도기행',
     image: require('../images/나도기행.JPG'),
-    site: '../routes/nodo.html',
+    site: '../routes/nado.html',
     explain: (
       <>
         <>

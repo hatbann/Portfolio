@@ -11,7 +11,6 @@ function Skills() {
             <li>CSS</li>
             <li>JAVASCRIPT</li>
             <li>REACT</li>
-            <li>REACT-NATIVE</li>
           </ul>
         </div>
         <div>
