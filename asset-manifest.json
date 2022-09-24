@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/New-Portfolio/static/css/main.ec8adf91.css",
-    "main.js": "/New-Portfolio/static/js/main.925488af.js",
+    "main.css": "/New-Portfolio/static/css/main.b9fd2a3a.css",
+    "main.js": "/New-Portfolio/static/js/main.ace5c5cc.js",
     "static/media/마켓컬리.png": "/New-Portfolio/static/media/마켓컬리.e0a475010383a43cf973.png",
     "static/media/logo_trans.png": "/New-Portfolio/static/media/logo_trans.c8ec36176511fa7afbe2.png",
     "static/media/portfolio.png": "/New-Portfolio/static/media/portfolio.58f3f9652f04d5c86002.png",
@@ -10,6 +10,7 @@
     "static/media/프로필.jpg": "/New-Portfolio/static/media/프로필.6933fe70d4f77e602a24.jpg",
     "static/media/nwitter.png": "/New-Portfolio/static/media/nwitter.eb03c0d185f9ae7e4f65.png",
     "static/media/kokoa_2.png": "/New-Portfolio/static/media/kokoa_2.3645a8952c9cbc25133a.png",
+    "static/media/todolist.png": "/New-Portfolio/static/media/todolist.10b617ca8b429a5815c3.png",
     "static/media/paint.png": "/New-Portfolio/static/media/paint.38b30ad7729ed8dbc0cd.png",
     "static/media/Notion.png": "/New-Portfolio/static/media/Notion.7aa264a898951e791ee3.png",
     "static/media/slick.svg": "/New-Portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -17,11 +18,11 @@
     "static/media/slick.ttf": "/New-Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/New-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/New-Portfolio/index.html",
-    "main.ec8adf91.css.map": "/New-Portfolio/static/css/main.ec8adf91.css.map",
-    "main.925488af.js.map": "/New-Portfolio/static/js/main.925488af.js.map"
+    "main.b9fd2a3a.css.map": "/New-Portfolio/static/css/main.b9fd2a3a.css.map",
+    "main.ace5c5cc.js.map": "/New-Portfolio/static/js/main.ace5c5cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec8adf91.css",
-    "static/js/main.925488af.js"
+    "static/css/main.b9fd2a3a.css",
+    "static/js/main.ace5c5cc.js"
   ]
 }
