@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 3px;
+  background-color: white;
+  width: calc(100vw - (100vw - 100%));
 }
 
 .header {
@@ -27,12 +27,63 @@
   margin: 0px 5px;
 }
 
-.menus {
+.nav {
+  display: flex;
   font-size: 20px;
+}
+
+.navtoggle_bar {
+  display: none;
 }
 
 .menu {
   margin-right: 15px;
   font-weight: 600;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    padding: 3px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none;
+    padding-bottom: 5px;
+  }
+
+  .navtoggle_bar {
+    display: block;
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+    margin-right: 1rem;
+    margin-top: 5px;
+  }
+
+  .nav.show {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .menu {
+    margin: 0 15px;
+  }
 }

@@ -66,8 +66,49 @@
   font-size: 17px;
 }
 
-@media screen and (max-width: 980px) {
+@media (min-width: 1190px) {
+  .explain p {
+    width: 50vw;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
+  .container {
+    margin-top: 4rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .profile__img {
+    margin: 0;
+    width: 10rem;
+    margin-bottom: 30px;
+  }
+
+  .profile__details {
+    width: 100%;
+  }
+
+  .profile__details span {
+    font-size: 1.7rem;
+  }
+  .profile__detail {
+    margin-top: 10px;
+  }
+
+  .profile__detail__title {
+    margin-right: 2rem;
+  }
+
+  .explain h2 {
+    font-size: 1.5rem;
+  }
+
+  .explain > p {
+    font-size: 1rem;
+  }
 }

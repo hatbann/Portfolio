@@ -7,8 +7,8 @@
 }
 
 .img {
-  width: 400px;
-  height: 199px;
+  width: 25em;
+  height: 14em;
   cursor: pointer;
 }
 
@@ -18,4 +18,18 @@
 
 .explain {
   font-size: 15px;
+}
+
+@media (max-width: 1700px) {
+  .img {
+    width: 15em;
+    height: 10em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .img {
+    width: 10em;
+    height: 7em;
+  }
 }
