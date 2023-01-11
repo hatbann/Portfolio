@@ -24,6 +24,11 @@ const Address = (props) => {
           src={require('../images/tistory.png')}
           onClick={() => window.open('https://hatban57.tistory.com/')}
         />
+        <img
+          className={styles.github_img}
+          src={require('../images/velog.png')}
+          onClick={() => window.open('https://velog.io/@hatbann')}
+        />
       </div>
 
       <div>email : chohyebinn@naver.com</div>
