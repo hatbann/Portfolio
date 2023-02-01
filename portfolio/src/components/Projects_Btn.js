@@ -6,7 +6,6 @@ const Projects_Btn = ({
   btnWeb,
   web,
   btnMobile,
-  mobile,
   btnDesign,
   design,
 }) => {
@@ -18,14 +17,6 @@ const Projects_Btn = ({
           className={`${styles.btn} ${web ? styles.active : styles.inactive} `}
         >
           Web
-        </button>
-        <button
-          onClick={btnMobile}
-          className={`${styles.btn} ${
-            mobile ? styles.active : styles.inactive
-          } `}
-        >
-          Mobile
         </button>
         <button
           onClick={btnDesign}

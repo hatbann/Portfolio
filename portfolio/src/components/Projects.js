@@ -33,13 +33,11 @@ function Projects() {
         btnWeb={btnWeb}
         web={web}
         btnMobile={btnMobile}
-        mobile={mobile}
         btnDesign={btnDesign}
         design={design}
       />
       <div className={styles.content}>
         {web ? <Web /> : null}
-        {mobile ? <Mobile /> : null}
         {design ? <Design /> : null}
       </div>
     </div>

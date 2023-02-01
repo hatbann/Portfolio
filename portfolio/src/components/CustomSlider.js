@@ -36,6 +36,9 @@ export const StyledSlider = styled(Slider)`
   .slick-next:before {
     color: #c2e9ff;
   }
+  .slick-prev:before, .slick-next:before{
+    font-size: 25px;
+  }
 `;
 
 const CustomSlider = ({ projects }) => {

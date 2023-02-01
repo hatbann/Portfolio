@@ -10,7 +10,7 @@ button {
 
 .btns {
   display: flex;
-  width: 400px;
+  width: 250px;
   justify-content: space-between;
   font-family: 'Noto Sans KR', sans-serif;
 }

@@ -22,7 +22,7 @@ const webProjects = [
     id: 2,
     projectName: '제로웨이브',
     image: require('../images/zerowave.png'),
-    site: 'http://115.85.180.209:8000/zerowave',
+    site: 'http://27.96.130.247:8000/zerowave',
     explain: (
       <>
         HTML, CSS를 이용해서 제작한 카카오톡 클론사이트입니다. 반응형 웹을
