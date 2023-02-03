@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/New-Portfolio/static/css/main.49527736.css",
-    "main.js": "/New-Portfolio/static/js/main.58266e79.js",
+    "main.js": "/New-Portfolio/static/js/main.cee73021.js",
     "static/media/logo_trans.png": "/New-Portfolio/static/media/logo_trans.c8ec36176511fa7afbe2.png",
     "static/media/portfolio.png": "/New-Portfolio/static/media/portfolio.58f3f9652f04d5c86002.png",
     "static/media/나도기행.JPG": "/New-Portfolio/static/media/나도기행.accecfcdc9ac2ecbea1d.JPG",
@@ -19,10 +19,10 @@
     "static/media/slick.woff": "/New-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/New-Portfolio/index.html",
     "main.49527736.css.map": "/New-Portfolio/static/css/main.49527736.css.map",
-    "main.58266e79.js.map": "/New-Portfolio/static/js/main.58266e79.js.map"
+    "main.cee73021.js.map": "/New-Portfolio/static/js/main.cee73021.js.map"
   },
   "entrypoints": [
     "static/css/main.49527736.css",
-    "static/js/main.58266e79.js"
+    "static/js/main.cee73021.js"
   ]
 }
