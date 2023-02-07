@@ -33,6 +33,17 @@ const webProjects = [
   },
   {
     id: 3,
+    projectName: 'BunnyLetter',
+    image: require('../images/bunnyletter.png'),
+    site: 'http://49.50.173.65:3000/',
+    explain: (
+      <>
+2023 계묘년을 맞이해 주변 사람들에게 편지를 작성해 마음을 전달할 수 있는 소통의 장이 되는 사이트를 제작했습니다. 편지를 작성하고 회원인 지인의 닉네임을 검색해 전송할 수 있습니다. 또한 카카오톡 공유하기로 편지를 보냈다는 것을 알릴 수 있습니다.
+      </>
+    ),
+  },
+  {
+    id: 4,
     projectName: 'Todo List',
     image: require('../images/todolist.png'),
     site: 'https://hatbann.github.io/todo-list/todolist.html',
@@ -46,7 +57,7 @@ const webProjects = [
     ),
   },
   {
-    id: 4,
+    id: 5,
     projectName: 'nwitter',
     image: require('../images/nwitter.png'),
     site: 'https://hatbann.github.io/nwitter/#/',
@@ -65,7 +76,7 @@ const webProjects = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     projectName: '카카오톡 클론코딩',
     image: require('../images/kokoa_2.png'),
     site: 'https://hatbann.github.io/kokoa-clone/',
@@ -78,15 +89,13 @@ const webProjects = [
     ),
   },
   {
-    id: 6,
+    id: 7,
     projectName: '그림판',
     image: require('../images/paint.png'),
     site: 'https://hatbann.github.io/paint/',
     explain: (
       <>
-        HTML, CSS를 이용해서 제작한 카카오톡 클론사이트입니다. 반응형 웹을
-        공부하기 위해 모바일 사이즈에 맞게 제작했으며 다양한 CSS 요소를 이용해
-        재미있고 동적인 애니메이션 효과를 주었습니다
+        HTML, CSS, Javascript를 이용해서 제작한 그림판 클론사이트입니다. 그림판 색 전체 칠하기, 그림그리기, 선 두께 변경 및 색상 변경이 가능하며 만든 그림을 다운로드 할 수 있습니다.
       </>
     ),
   },
