@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/New-Portfolio/static/css/main.49527736.css",
-    "main.js": "/New-Portfolio/static/js/main.cee73021.js",
+    "main.js": "/New-Portfolio/static/js/main.546227b4.js",
     "static/media/logo_trans.png": "/New-Portfolio/static/media/logo_trans.c8ec36176511fa7afbe2.png",
     "static/media/portfolio.png": "/New-Portfolio/static/media/portfolio.58f3f9652f04d5c86002.png",
+    "static/media/bunnyletter.png": "/New-Portfolio/static/media/bunnyletter.1bde8253fbdf83153175.png",
     "static/media/나도기행.JPG": "/New-Portfolio/static/media/나도기행.accecfcdc9ac2ecbea1d.JPG",
     "static/media/프로필.jpg": "/New-Portfolio/static/media/프로필.6933fe70d4f77e602a24.jpg",
     "static/media/dogsbooks.png": "/New-Portfolio/static/media/dogsbooks.254accecd1c5cbdd234b.png",
@@ -19,10 +20,10 @@
     "static/media/slick.woff": "/New-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/New-Portfolio/index.html",
     "main.49527736.css.map": "/New-Portfolio/static/css/main.49527736.css.map",
-    "main.cee73021.js.map": "/New-Portfolio/static/js/main.cee73021.js.map"
+    "main.546227b4.js.map": "/New-Portfolio/static/js/main.546227b4.js.map"
   },
   "entrypoints": [
     "static/css/main.49527736.css",
-    "static/js/main.cee73021.js"
+    "static/js/main.546227b4.js"
   ]
 }
