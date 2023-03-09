@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/New-Portfolio/static/css/main.49527736.css",
-    "main.js": "/New-Portfolio/static/js/main.546227b4.js",
+    "main.css": "/New-Portfolio/static/css/main.a996f49a.css",
+    "main.js": "/New-Portfolio/static/js/main.5f6b10de.js",
     "static/media/logo_trans.png": "/New-Portfolio/static/media/logo_trans.c8ec36176511fa7afbe2.png",
     "static/media/portfolio.png": "/New-Portfolio/static/media/portfolio.58f3f9652f04d5c86002.png",
     "static/media/bunnyletter.png": "/New-Portfolio/static/media/bunnyletter.1bde8253fbdf83153175.png",
     "static/media/나도기행.JPG": "/New-Portfolio/static/media/나도기행.accecfcdc9ac2ecbea1d.JPG",
     "static/media/프로필.jpg": "/New-Portfolio/static/media/프로필.6933fe70d4f77e602a24.jpg",
+    "static/media/bandari.png": "/New-Portfolio/static/media/bandari.3cb11c009d8c84ff6001.png",
     "static/media/dogsbooks.png": "/New-Portfolio/static/media/dogsbooks.254accecd1c5cbdd234b.png",
     "static/media/nwitter.png": "/New-Portfolio/static/media/nwitter.eb03c0d185f9ae7e4f65.png",
     "static/media/kokoa_2.png": "/New-Portfolio/static/media/kokoa_2.3645a8952c9cbc25133a.png",
@@ -19,11 +20,11 @@
     "static/media/slick.ttf": "/New-Portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/New-Portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/New-Portfolio/index.html",
-    "main.49527736.css.map": "/New-Portfolio/static/css/main.49527736.css.map",
-    "main.546227b4.js.map": "/New-Portfolio/static/js/main.546227b4.js.map"
+    "main.a996f49a.css.map": "/New-Portfolio/static/css/main.a996f49a.css.map",
+    "main.5f6b10de.js.map": "/New-Portfolio/static/js/main.5f6b10de.js.map"
   },
   "entrypoints": [
-    "static/css/main.49527736.css",
-    "static/js/main.546227b4.js"
+    "static/css/main.a996f49a.css",
+    "static/js/main.5f6b10de.js"
   ]
 }
