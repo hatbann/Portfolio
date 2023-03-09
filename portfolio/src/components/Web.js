@@ -5,16 +5,14 @@ import CustomSlider from './CustomSlider';
 const webProjects = [
   {
     id: 1,
-    projectName: 'Portfolio',
-    image: require('../images/portfolio.png'),
+    projectName: 'Bandari',
+    image: require('../images/bandari.png'),
     site: '/',
     explain: (
       <>
         <>
-          기존에 있던 javascript만을 이용해 만든 포트폴리오 사이트를
-          디벨롭했습니다.
+        반려동물을 키우다 보면 안맞는 옷이나 입맛에 맞지 않은 사료나 간식이 생겨 쓰레기가 되는 경우가 많습니다. 이런 상황이 쌓이다보면 환경적으로, 경제적으로 문제를 발생시키기 때문에 이것을 해결할 수 있는 웹사이트를 제작했습니다.
         </>
-        <>&nbsp;저만의 포트폴리오를 리액트 기반 환경에서 다시 제작했습니다</>
       </>
     ),
   },
@@ -44,6 +42,21 @@ const webProjects = [
   },
   {
     id: 4,
+    projectName: 'Portfolio',
+    image: require('../images/portfolio.png'),
+    site: '/',
+    explain: (
+      <>
+        <>
+          기존에 있던 javascript만을 이용해 만든 포트폴리오 사이트를
+          디벨롭했습니다.
+        </>
+        <>&nbsp;저만의 포트폴리오를 리액트 기반 환경에서 다시 제작했습니다</>
+      </>
+    ),
+  },
+  {
+    id: 5,
     projectName: 'Todo List',
     image: require('../images/todolist.png'),
     site: 'https://hatbann.github.io/todo-list/todolist.html',
@@ -57,7 +70,7 @@ const webProjects = [
     ),
   },
   {
-    id: 5,
+    id: 6,
     projectName: 'nwitter',
     image: require('../images/nwitter.png'),
     site: 'https://hatbann.github.io/nwitter/#/',
@@ -76,7 +89,7 @@ const webProjects = [
     ),
   },
   {
-    id: 6,
+    id: 7,
     projectName: '카카오톡 클론코딩',
     image: require('../images/kokoa_2.png'),
     site: 'https://hatbann.github.io/kokoa-clone/',
@@ -89,7 +102,7 @@ const webProjects = [
     ),
   },
   {
-    id: 7,
+    id: 8,
     projectName: '그림판',
     image: require('../images/paint.png'),
     site: 'https://hatbann.github.io/paint/',

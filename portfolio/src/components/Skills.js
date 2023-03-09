@@ -11,6 +11,7 @@ function Skills() {
             <li>CSS</li>
             <li>JAVASCRIPT</li>
             <li>REACT</li>
+            <li>REDUX</li>
           </ul>
         </section>
         <secttion>
