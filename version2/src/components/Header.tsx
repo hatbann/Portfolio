@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { EventHandler } from 'react';
+import style from '../styles/header.module.scss';
 
-const Header = () => {
+const Header = ({
+  handleCilck,
+}: {
+  handleCilck: (e: React.MouseEvent) => void;
+}) => {
   return (
-    <div>
+    <div className={style['container']}>
       <div>Logo</div>
-      <div>
-        <span>INTRO</span>
-        <span>SKILLS</span>
-        <span>CAREER</span>
-        <span>PROJECTS</span>
-        <span>CONTACT</span>
+      <div onClick={handleCilck} className={style['menus']}>
+        <span id="introViewRef">INTRO</span>
+        <span id="skillsViewRef">SKILLS</span>
+        <span id="careerViewRef">CAREER</span>
+        <span id="projectsViewRef">PROJECTS</span>
+        <span id="contactViewRef">CONTACT</span>
       </div>
       <div>toggle button</div>
     </div>
