@@ -6,8 +6,10 @@ import Skills from '@/components/Skills';
 import Career from '@/components/Career';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
-import Intro from '@/components/Intro';
-import { RefObject, useRef } from 'react';
+import Intro from '@/components/Intro/Intro';
+import { RefObject, useEffect, useRef, useState } from 'react';
+
+export type tabNames = 'intro' | 'skills' | 'career' | 'project' | 'contact';
 
 export default function Home() {
   const introViewRef = useRef<HTMLDivElement>(null);
@@ -16,25 +18,57 @@ export default function Home() {
   const projectsViewRef = useRef<HTMLDivElement>(null);
   const contactViewRef = useRef<HTMLDivElement>(null);
 
-  const viewCategoryRefArr: { [name: string]: RefObject<HTMLDivElement> } = {
-    introViewRef: introViewRef,
-    skillsViewRef: skillsViewRef,
-    careerViewRef: careerViewRef,
-    projectsViewRef: projectsViewRef,
-    contactViewRef: contactViewRef,
-  };
+  const refArr: RefObject<HTMLDivElement>[] = [
+    introViewRef,
+    skillsViewRef,
+    careerViewRef,
+    projectsViewRef,
+    contactViewRef,
+  ];
 
-  const handleScrollViews = (e: React.MouseEvent) => {
-    const target = e.target as HTMLElement;
-    viewCategoryRefArr[target.id].current?.scrollIntoView({
+  const [tabName, setTabName] = useState<tabNames>('intro');
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkTabName);
+    return () => {
+      window.removeEventListener('scroll', checkTabName);
+    };
+  }, []);
+
+  function checkTabName() {
+    const yOffset = window.pageYOffset;
+    if (yOffset! >= 0 && yOffset < skillsViewRef.current?.offsetTop! * 0.5) {
+      setTabName('intro');
+    } else if (
+      yOffset! >= skillsViewRef.current?.offsetTop! * 0.5 &&
+      yOffset! <= careerViewRef.current?.offsetTop! * 0.6
+    ) {
+      setTabName('skills');
+    } else if (
+      yOffset! >= careerViewRef.current?.offsetTop! * 0.6 &&
+      yOffset! <= projectsViewRef.current?.offsetTop! * 0.7
+    ) {
+      setTabName('career');
+    } else if (
+      yOffset! >= projectsViewRef.current?.offsetTop! * 0.6 &&
+      yOffset! <= contactViewRef.current?.offsetTop! * 0.7
+    ) {
+      setTabName('project');
+    } else {
+      setTabName('contact');
+    }
+  }
+
+  const scrollToSection = (elementRef: HTMLDivElement, e: React.MouseEvent) => {
+    window.scrollTo({
+      top: elementRef.offsetTop - 266,
       behavior: 'smooth',
-      block: 'center',
     });
   };
 
   return (
     <main className={style.main}>
-      <Header handleCilck={handleScrollViews} />
+      <Header handleCilck={scrollToSection} refArr={refArr} tabName={tabName} />
       <div ref={introViewRef}>
         <Intro />
       </div>
