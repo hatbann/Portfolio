@@ -69,20 +69,20 @@ export default function Home() {
   return (
     <main className={style.main}>
       <Header handleCilck={scrollToSection} refArr={refArr} tabName={tabName} />
-      <div ref={introViewRef}>
+      <div ref={introViewRef} className={style['wrapper']}>
         <Intro />
       </div>
-      <div ref={skillsViewRef}>
+      <div ref={skillsViewRef} className={style['wrapper']}>
         <Skills />
       </div>
-      <div ref={careerViewRef}>
+      <div ref={careerViewRef} className={style['wrapper']}>
         <Career />
       </div>
 
-      <div ref={projectsViewRef}>
+      <div ref={projectsViewRef} className={style['wrapper']}>
         <Projects />
       </div>
-      <div ref={contactViewRef}>
+      <div ref={contactViewRef} className={style['wrapper']}>
         <Contact />
       </div>
     </main>
