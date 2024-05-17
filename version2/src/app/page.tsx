@@ -61,7 +61,7 @@ export default function Home() {
 
   const scrollToSection = (elementRef: HTMLDivElement, e: React.MouseEvent) => {
     window.scrollTo({
-      top: elementRef.offsetTop - 266,
+      top: elementRef.offsetTop - 100,
       behavior: 'smooth',
     });
   };
