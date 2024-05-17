@@ -89,7 +89,9 @@ const Skills = () => {
               <h4 className={`${style['skill-type']} ${style[`${skill}`]}`}>
                 {skill}
               </h4>
-              <div className={style['skills-container']}>
+              <div
+                className={`${style['skills-container']} ${style[`${skill}`]}`}
+              >
                 {skillsTemp.map((temp, idx) => {
                   return (
                     <div className={style['skill']}>

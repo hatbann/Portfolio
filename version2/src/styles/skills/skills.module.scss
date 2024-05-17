@@ -4,28 +4,33 @@
   width: 100%;
   height: 100%;
   padding-top: 85px;
+  @include flex-column(center, flex-start);
+  gap: 100px;
 }
 
 .title {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
+  width: 100%;
 }
 
 .lists {
   width: 100%;
-  padding: 20px;
+  height: 400px;
+  padding: 30px 20px;
   border: 1px solid gray;
-  @include flex-row(center, flex-start);
+  @include flex-row(space-around, center);
   gap: 10px;
 }
 
 .skillList {
   width: 30%;
-  @include flex-column(center, flex-start);
-  gap: 10px;
+  height: 100%;
+  @include flex-column(flex-start, flex-start);
+  gap: 30px;
   .skill-type {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 
     &.fe {
@@ -37,7 +42,7 @@
     }
 
     &.etc {
-      color: rgb(83, 83, 83);
+      color: rgb(121, 119, 119);
     }
   }
 
@@ -45,11 +50,13 @@
     @include flex-row(flex-start, flex-start);
     gap: 10px;
     width: 100%;
+    height: 100%;
     flex-wrap: wrap;
     .skill {
       @include flex-column(flex-start, center);
+      gap: 10px;
       width: 100px;
-      height: 100px;
+      height: 120px;
       .skill-img {
         @include flex-row(center, center);
         width: 80px;
@@ -72,6 +79,30 @@
 
         &.hover {
           display: inline-block;
+        }
+      }
+    }
+
+    &.fe {
+      .skill {
+        .name {
+          color: rgb(197, 81, 81);
+        }
+      }
+    }
+
+    &.be {
+      .skill {
+        .name {
+          color: rgb(78, 122, 180);
+        }
+      }
+    }
+
+    &.etc {
+      .skill {
+        .name {
+          color: rgb(43, 42, 42);
         }
       }
     }
