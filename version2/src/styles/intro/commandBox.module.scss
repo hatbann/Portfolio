@@ -6,6 +6,10 @@
   height: 450px;
   background-color: #1e1e1e;
   border-radius: 14px;
+
+  &.dark {
+    background-color: white;
+  }
 }
 
 .top {
@@ -16,6 +20,10 @@
   border-top-right-radius: inherit;
   @include flex-row(flex-start, center);
   padding: 8px 10px;
+
+  &.dark {
+    background-color: rgb(235, 235, 235);
+  }
 
   .top-left {
     width: 20%;
@@ -52,4 +60,8 @@
   color: white;
   padding: 3px 5px;
   font-size: 15px;
+
+  &.dark {
+    color: #1e1e1e;
+  }
 }

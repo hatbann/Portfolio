@@ -7,9 +7,19 @@ import Career from '@/components/Career';
 import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Intro from '@/components/Intro/Intro';
-import { RefObject, useEffect, useRef, useState } from 'react';
+import { RefObject, useEffect, useRef, useState, createContext } from 'react';
 
 export type tabNames = 'intro' | 'skills' | 'career' | 'project' | 'contact';
+
+export type DarkmodeType = {
+  isDark: boolean;
+  setIsDark: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export const DarkmodeContext = createContext<DarkmodeType>({
+  isDark: false,
+  setIsDark: () => {},
+});
 
 export default function Home() {
   const introViewRef = useRef<HTMLDivElement>(null);
@@ -27,6 +37,7 @@ export default function Home() {
   ];
 
   const [tabName, setTabName] = useState<tabNames>('intro');
+  const [isDark, setIsDark] = useState<boolean>(false);
 
   useEffect(() => {
     window.addEventListener('scroll', checkTabName);
@@ -67,24 +78,34 @@ export default function Home() {
   };
 
   return (
-    <main className={style.main}>
-      <Header handleCilck={scrollToSection} refArr={refArr} tabName={tabName} />
-      <div ref={introViewRef} className={style['wrapper']}>
-        <Intro />
-      </div>
-      <div ref={skillsViewRef} className={style['wrapper']}>
-        <Skills />
-      </div>
-      <div ref={careerViewRef} className={style['wrapper']}>
-        <Career />
-      </div>
+    <DarkmodeContext.Provider value={{ isDark, setIsDark }}>
+      <main
+        className={
+          !isDark ? style['main'] : `${style['main']} ${style['dark']}`
+        }
+      >
+        <Header
+          handleCilck={scrollToSection}
+          refArr={refArr}
+          tabName={tabName}
+        />
+        <div ref={introViewRef} className={style['wrapper']}>
+          <Intro />
+        </div>
+        <div ref={skillsViewRef} className={style['wrapper']}>
+          <Skills />
+        </div>
+        <div ref={careerViewRef} className={style['wrapper']}>
+          <Career />
+        </div>
 
-      <div ref={projectsViewRef} className={style['wrapper']}>
-        <Projects />
-      </div>
-      <div ref={contactViewRef} className={style['wrapper']}>
-        <Contact />
-      </div>
-    </main>
+        <div ref={projectsViewRef} className={style['wrapper']}>
+          <Projects />
+        </div>
+        <div ref={contactViewRef} className={style['wrapper']}>
+          <Contact />
+        </div>
+      </main>
+    </DarkmodeContext.Provider>
   );
 }

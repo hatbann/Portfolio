@@ -8,13 +8,22 @@
   height: 85px;
   width: 100%;
   padding: 0 40px;
-  //background-color: white;
   background: linear-gradient(
     to bottom,
     rgb(255, 255, 255),
     rgba(255, 255, 255, 0.8)
   );
   z-index: 100;
+
+  &.dark {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(39, 39, 39, 0.8));
+  }
+}
+
+.logo {
+  &.dark {
+    color: white;
+  }
 }
 
 .menus {
@@ -31,6 +40,54 @@
 
     &.selected {
       border-bottom: 3px solid black;
+
+      &.dark {
+        border-bottom: 3px solid white;
+      }
+    }
+
+    &.dark {
+      color: white;
+    }
+  }
+}
+
+.btn-container {
+  border: none;
+  position: relative;
+  width: 64px;
+  height: 26px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: gray;
+
+  &.light {
+  }
+
+  &.dark {
+  }
+
+  .btn {
+    position: absolute;
+    display: block;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    top: 4px;
+    transition: all 0.3s;
+
+    &.hidden {
+      opacity: 0;
+    }
+
+    &.light {
+      background-color: white;
+      left: 4px;
+    }
+
+    &.dark {
+      background-color: rgb(55, 55, 76);
+      left: calc(100% - 22.5px);
     }
   }
 }
