@@ -1,0 +1,46 @@
+@import '../layout';
+@import '../variables';
+@import '../font';
+
+.container {
+  @include flex-column(flex-start, center);
+
+  padding: 10px 20px;
+
+  width: 300px;
+  height: 400px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  background: #ffffff;
+  -webkit-box-shadow: 7px 7px 19px #ededed, -7px -7px 19px #ffffff;
+  box-shadow: 7px 7px 19px #ededed, -7px -7px 19px #ffffff;
+  cursor: pointer;
+
+  .thumbnail {
+    width: auto;
+    height: 140px;
+  }
+}
+
+.title {
+  width: 100%;
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: start;
+  color: $gray-dark;
+}
+
+.contents {
+  @include flex-column(flex-start, flex-start);
+  gap: 8px;
+  margin-top: 15px;
+  width: 100%;
+  .content {
+    font-size: 14px;
+    color: $gray-main;
+    list-style: disc;
+    margin-left: 25px;
+    line-height: 17px;
+  }
+}

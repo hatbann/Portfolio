@@ -2,9 +2,10 @@ import React from 'react';
 import style from '../styles/career/career.module.scss';
 import moment from 'moment';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const Career = () => {
   return (
@@ -16,14 +17,15 @@ const Career = () => {
           <div className={style['info']}>
             <p>프론트엔드 개발자</p>
             <p>
-              2023.04.17 ~ (+{moment().diff(moment('2023.04.17'), 'days')} days)
+              2023.04.17 ~ 2024.10.10 (+
+              {moment('2024.10.10').diff(moment('2023.04.17'), 'days')} days)
             </p>
           </div>
         </div>
         <section className={style['swiper-wrapper']}>
           <Swiper
-            pagination={true}
-            modules={[Pagination]}
+            navigation={true}
+            modules={[Pagination, Navigation]}
             className={style['swiper']}
           >
             <SwiperSlide className={style['swiper-slide']}>
@@ -53,8 +55,10 @@ const Career = () => {
                   <div className={style['bottom-title']}>내용</div>
                   <div className={style['bottom-info']}>
                     <span>서비스 출시, 리뉴얼 및 고도화진행</span>
+                    <span>next.js 기반 프로젝트 진행</span>
                     <span>xstate, recoil을 통한 전역 상태 관리</span>
-                    <span>storybook을 사용한 테스트 자동화 경험</span>
+                    <span>websocket 을 통한 실시간 상태 노출</span>
+                    <span>React-hook-form을 통한 input form 관리</span>
                   </div>
                 </div>
               </div>
@@ -89,6 +93,7 @@ const Career = () => {
                       사용자 경험을 고려한 아이디어 제안 및 서비스 출시,
                       고도화진행
                     </span>
+                    <span>next.js 기반 프로젝트 진행</span>
                     <span>Rechart를 사용한 데이터 시각화</span>
                     <span>recoil을 통한 전역 상태 관리</span>
                   </div>

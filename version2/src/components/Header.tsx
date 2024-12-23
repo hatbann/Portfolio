@@ -76,7 +76,7 @@ const Header = ({
         <span
           onClick={(e) => handleCilck(refArr[3].current!, e)}
           className={
-            tabName === 'project'
+            tabName === 'activity'
               ? !isDark
                 ? style.selected
                 : `${style['selected']} ${style['dark']}`
@@ -85,7 +85,7 @@ const Header = ({
               : `${style['dark']}`
           }
         >
-          PROJECTS
+          Activity
         </span>
         <span
           onClick={(e) => handleCilck(refArr[4].current!, e)}

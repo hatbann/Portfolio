@@ -16,6 +16,14 @@
   width: 100%;
 }
 
+.title:after {
+  content: '';
+  display: block;
+  width: 40px; /* 밑줄 길이 조절 */
+  border-bottom: 2px solid #000000;
+  margin: 20px auto;
+}
+
 .career-container {
   width: 100%;
   height: 100%;
@@ -40,7 +48,7 @@
 }
 
 .swiper-wrapper {
-  width: 100%;
+  width: 1000px;
   height: 700px;
 }
 
@@ -62,6 +70,11 @@
     img {
       cursor: pointer;
       width: 700px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px;
+      background: #ffffff;
+      -webkit-box-shadow: 11px 11px 19px #e3e3e3, -11px -11px 19px #ffffff;
+      box-shadow: 11px 11px 19px #e3e3e3, -11px -11px 19px #ffffff;
     }
   }
 
@@ -72,7 +85,7 @@
 
     .top {
       @include flex-row(space-between, flex-start);
-      width: 30%;
+      width: 50%;
       font-size: 17px;
       font-weight: 500;
       color: $gray-main;
@@ -96,7 +109,7 @@
     .bottom {
       @include flex-row(space-between, flex-start);
       font-size: 15px;
-      width: 30%;
+      width: 50%;
 
       .bottom-title {
         color: $gray-main;

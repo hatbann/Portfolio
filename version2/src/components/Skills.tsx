@@ -56,6 +56,11 @@ const skillsArr: SkillType[] = [
     img: '/images/png/git.png',
   },
   {
+    name: 'Vercel',
+    type: 'etc',
+    img: '/images/png/vercel.png',
+  },
+  {
     name: 'Figma',
     type: 'etc',
     img: '/images/png/figma.png',

@@ -4,12 +4,12 @@ import Header from '@/components/Header';
 import style from '../styles/page.module.scss';
 import Skills from '@/components/Skills';
 import Career from '@/components/Career';
-import Projects from '@/components/Projects';
+import Activity from '@/components/Activity/Activity';
 import Contact from '@/components/Contact';
 import Intro from '@/components/Intro/Intro';
 import { RefObject, useEffect, useRef, useState, createContext } from 'react';
 
-export type tabNames = 'intro' | 'skills' | 'career' | 'project' | 'contact';
+export type tabNames = 'intro' | 'skills' | 'career' | 'activity' | 'contact';
 
 export type DarkmodeType = {
   isDark: boolean;
@@ -25,14 +25,14 @@ export default function Home() {
   const introViewRef = useRef<HTMLDivElement>(null);
   const skillsViewRef = useRef<HTMLDivElement>(null);
   const careerViewRef = useRef<HTMLDivElement>(null);
-  const projectsViewRef = useRef<HTMLDivElement>(null);
+  const avtivityViewRef = useRef<HTMLDivElement>(null);
   const contactViewRef = useRef<HTMLDivElement>(null);
 
   const refArr: RefObject<HTMLDivElement>[] = [
     introViewRef,
     skillsViewRef,
     careerViewRef,
-    projectsViewRef,
+    avtivityViewRef,
     contactViewRef,
   ];
 
@@ -57,14 +57,14 @@ export default function Home() {
       setTabName('skills');
     } else if (
       yOffset! >= careerViewRef.current?.offsetTop! * 0.6 &&
-      yOffset! <= projectsViewRef.current?.offsetTop! * 0.7
+      yOffset! <= avtivityViewRef.current?.offsetTop! * 0.7
     ) {
       setTabName('career');
     } else if (
-      yOffset! >= projectsViewRef.current?.offsetTop! * 0.6 &&
+      yOffset! >= avtivityViewRef.current?.offsetTop! * 0.6 &&
       yOffset! <= contactViewRef.current?.offsetTop! * 0.7
     ) {
-      setTabName('project');
+      setTabName('activity');
     } else {
       setTabName('contact');
     }
@@ -99,8 +99,8 @@ export default function Home() {
           <Career />
         </div>
 
-        <div ref={projectsViewRef} className={style['wrapper']}>
-          <Projects />
+        <div ref={avtivityViewRef} className={style['wrapper']}>
+          <Activity />
         </div>
         <div ref={contactViewRef} className={style['wrapper']}>
           <Contact />
