@@ -1,0 +1,68 @@
+@import '../layout';
+@import '../variables';
+
+.container {
+  @include flex-column(flex-start, center);
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  padding-top: 85px;
+}
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.phrase {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 21px;
+  color: rgb(255, 153, 0);
+}
+
+.contact {
+  @include flex-column(flex-start, center);
+  gap: 30px;
+  width: 500px;
+  height: 400px;
+  padding: 25px;
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: $gray-dark;
+  }
+
+  .contact-info-wrapper {
+    @include flex-column(flex-start, center);
+    gap: 30px;
+
+    .contact-info {
+      @include flex-column(center, center);
+      gap: 10px;
+      h1 {
+        font-size: 20px;
+        font-weight: 600;
+        color: $gray-dark;
+      }
+
+      p {
+        font-size: 15px;
+        color: $gray-light;
+        cursor: pointer;
+      }
+    }
+
+    .contact-links {
+      @include flex-row(flex-start, center);
+      gap: 15px;
+
+      span {
+        cursor: pointer;
+      }
+    }
+  }
+}

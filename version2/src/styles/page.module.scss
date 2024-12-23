@@ -1,0 +1,16 @@
+.main {
+  padding: 0 40px;
+
+  &.dark {
+    background-color: rgb(39, 39, 39);
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  &:last-child {
+    height: 800px;
+  }
+}

@@ -1,0 +1,128 @@
+@import '../layout';
+@import '../variables';
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: 85px;
+  @include flex-column(center, flex-start);
+  gap: 50px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.title:after {
+  content: '';
+  display: block;
+  width: 40px; /* 밑줄 길이 조절 */
+  border-bottom: 2px solid #000000;
+  margin: 20px auto;
+}
+
+.career-container {
+  width: 100%;
+  height: 100%;
+  @include flex-column(flex-start, center);
+  gap: 50px;
+}
+
+.company {
+  width: 100%;
+  @include flex-column(flex-start, flex-start);
+  gap: 10px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .info {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.swiper-wrapper {
+  width: 1000px;
+  height: 700px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .img-wrapper {
+    img {
+      cursor: pointer;
+      width: 700px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px;
+      background: #ffffff;
+      -webkit-box-shadow: 11px 11px 19px #e3e3e3, -11px -11px 19px #ffffff;
+      box-shadow: 11px 11px 19px #e3e3e3, -11px -11px 19px #ffffff;
+    }
+  }
+
+  .contents {
+    @include flex-column(flex-start, center);
+    gap: 20px;
+    margin-top: 20px;
+
+    .top {
+      @include flex-row(space-between, flex-start);
+      width: 50%;
+      font-size: 17px;
+      font-weight: 500;
+      color: $gray-main;
+
+      .top-title {
+        font-weight: 600;
+      }
+      .top-info {
+        display: inline-block;
+        min-width: 70%;
+        text-align: start;
+      }
+    }
+
+    .line {
+      width: 30%;
+      height: 1px;
+      background-color: #d1d1dd;
+    }
+
+    .bottom {
+      @include flex-row(space-between, flex-start);
+      font-size: 15px;
+      width: 50%;
+
+      .bottom-title {
+        color: $gray-main;
+        font-weight: 600;
+      }
+
+      .bottom-info {
+        display: inline-block;
+        min-width: 70%;
+        @include flex-column(flex-start, flex-start);
+        gap: 8px;
+        color: $gray-light;
+      }
+    }
+  }
+}
