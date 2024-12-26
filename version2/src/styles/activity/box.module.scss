@@ -22,6 +22,10 @@
   }
 }
 
+.container:hover {
+  animation: animationBounce 1.5s infinite linear;
+}
+
 .title {
   width: 100%;
   font-size: 23px;
@@ -42,5 +46,15 @@
     list-style: disc;
     margin-left: 25px;
     line-height: 17px;
+  }
+}
+
+@keyframes animationBounce {
+  0%,
+  100% {
+    transform: translate(0px, 15px);
+  }
+  50% {
+    transform: translate(0, 0);
   }
 }

@@ -2,7 +2,7 @@
 @import '../variables';
 
 .container {
-  @include flex-column(flex-start, center);
+  @include flex-column(center, center);
   gap: 40px;
   width: 100%;
   height: 100%;

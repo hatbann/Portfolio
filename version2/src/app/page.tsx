@@ -52,12 +52,12 @@ export default function Home() {
       setTabName('intro');
     } else if (
       yOffset! >= skillsViewRef.current?.offsetTop! * 0.5 &&
-      yOffset! <= careerViewRef.current?.offsetTop! * 0.6
+      yOffset! <= careerViewRef.current?.offsetTop! * 0.65
     ) {
       setTabName('skills');
     } else if (
-      yOffset! >= careerViewRef.current?.offsetTop! * 0.6 &&
-      yOffset! <= avtivityViewRef.current?.offsetTop! * 0.7
+      yOffset! >= careerViewRef.current?.offsetTop! * 0.65 &&
+      yOffset! <= avtivityViewRef.current?.offsetTop! * 0.75
     ) {
       setTabName('career');
     } else if (

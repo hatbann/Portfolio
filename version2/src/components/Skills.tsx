@@ -51,6 +51,11 @@ const skillsArr: SkillType[] = [
     img: '/images/png/nodejs.png',
   },
   {
+    name: 'Django',
+    type: 'be',
+    img: '/images/png/django.png',
+  },
+  {
     name: 'Git',
     type: 'etc',
     img: '/images/png/git.png',

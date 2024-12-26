@@ -6,6 +6,7 @@ export type ActivityType = {
   title: string;
   img: string | undefined;
   contents: string[];
+  link?: string;
 };
 
 type ActivitiyListType = 'edu' | 'project' | 'cert';
@@ -42,6 +43,7 @@ const ProjectList: ActivityType[] = [
       ' jwt token을 통해 회원관리',
       '무한스크롤과 페이지 네이션 적용',
     ],
+    link: 'https://todayslunch.vercel.app',
   },
   {
     title: 'Zerowave',
@@ -52,6 +54,7 @@ const ProjectList: ActivityType[] = [
       '카카오 지도 api와 geoloaction을 활용해 유저 위치 기반 지도 노출',
       'next.js의 middleware를 통해 접근 가능 페이지 관리',
     ],
+    link: 'https://zerowave.vercel.app',
   },
   {
     title: 'Portforlio',
@@ -69,6 +72,7 @@ const ProjectList: ActivityType[] = [
       'firebase를 이용한 유저 관리',
       '알라딘 API를 활용한 도서 목록 추출',
     ],
+    link: 'https://hatbann.github.io/dogsbooks/',
   },
 ];
 
