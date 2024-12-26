@@ -28,6 +28,9 @@ const CommandBox = () => {
         }
       >
         <p>Last login: {moment().format('ddd MMM D HH:mm:ss')} on Hatban</p>
+        <div className={style['typing-wrapper']}>
+          <div className={style['typing']}>Hi, I'm Hyebin, a developer.</div>
+        </div>
       </section>
     </div>
   );
